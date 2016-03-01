@@ -20,5 +20,14 @@
     "angular-ui-router": "^0.2.18",
     "bootstrap": "^3.3.6",
     "ng-table": "^0.8.3"
+  },
+  "overrides":{
+    "bootstrap" : {
+         "main": [
+            "less/bootstrap.less",
+            "dist/css/bootstrap.css",
+            "dist/js/bootstrap.js"
+          ]
+    }
   }
 }
