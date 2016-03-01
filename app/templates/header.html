@@ -1,13 +1,14 @@
 <header class="header">
 	<h1>SupplyHub</h1>
-	<form ng-submit="">
+	<form ng-submit="vm.getProductsList(vm.query)">
 		<div class="input-group-btn">
-			<input ng-model="vm.searchText" type="text" class="form-control" placeholder="Search for...">
+			<input ng-model="vm.query" type="text" class="form-control" placeholder="Search for...">
 			<span class="input-group-btn">
-			  <button class="btn btn-default" ng-click="vm.getProducts(vm.searchText)" type="button">
+			  <button class="btn btn-default" ng-click="vm.getProductsList(vm.query)" type="button">
 			  	<span class="glyphicon glyphicon-search"></span>
 			  </button>
 			</span>
 		</div>
 	</form>
 </header>
+<div ui-view></div>

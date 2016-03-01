@@ -5,15 +5,21 @@
         .module('supplyhub.header')
         .controller('HeaderController', HeaderController);
 
-    HeaderController.$inject = ['ApiFactory'];
+    HeaderController.$inject = ['$state','ApiFactory'];
 
-    function HeaderController (ApiFactory) {
+    function HeaderController ($state, ApiFactory) {
         var vm = this;
 
-        vm.getProductList = getProductList;
+        vm.getProductsList = getProductsList;
 
-        function getProductList (query) {
-            $state.go('main.products', {search: query});
+        function getProductsList (query) {
+            ApiFactory
+                .getProductsList(query)
+                .success(function (products) {
+                    ApiFactory.productsList = products;
+
+                    $state.go('main.products', {search: query});
+                })
         }
     }
 })();

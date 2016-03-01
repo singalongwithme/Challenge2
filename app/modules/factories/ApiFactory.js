@@ -9,14 +9,17 @@
 
     function ApiFactory ($http) {
         var api = 'http://api.vip.supplyhub.com:19000/products?search=';
+        var productsList;
+
         var service = {
-            getProductList: getProductList
+            getProductsList: getProductsList,
+            productsList: productsList
         };
 
         return service;
 
-        function getProductList (query) {
-            $http
+        function getProductsList (query) {
+            return $http
                 .get(api + query);
         }
     }

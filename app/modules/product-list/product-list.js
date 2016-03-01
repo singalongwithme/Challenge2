@@ -12,7 +12,7 @@
         $stateProvider
             .state('main.products', {
                 url: '/products?search&page',
-                templateUrl: 'templates/product-list.html',
+                templateUrl: 'app/templates/product-list.html',
                 controller: 'ProductListController',
                 controllerAs: 'vm',
                 params: {

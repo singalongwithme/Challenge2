@@ -1,0 +1,9 @@
+<div class="container products-container">
+	<table ng-table="vm.tableParams" show-filter="false" class="table row">
+		<tr ng-repeat="item in vm.productsList">
+			<td title="'Product'">
+				{{ item }}
+			</td>
+		</tr>
+	</table>
+</div>
