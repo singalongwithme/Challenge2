@@ -11,6 +11,7 @@
 		<!-- endinject -->
 
 		<!-- inject:css -->
+		<link rel="stylesheet" href="/app/styles/main.css">
 		<!-- endinject -->
 	</head>
 	<body>
@@ -27,14 +28,13 @@
 		<script src="/bower_components/angular-material/angular-material.js"></script>
 		<!-- endinject -->
 
-		<!-- TODO: fix gulp order of injecting app modules -->
 		<!-- inject:js -->
-		<script src="/app/modules/app.js"></script>
-		<script src="/app/modules/factories/ApiFactory.js"></script>
-		<script src="/app/modules/header/header.js"></script>
-		<script src="/app/modules/header/header.controller.js"></script>
 		<script src="/app/modules/product-list/product-list.js"></script>
 		<script src="/app/modules/product-list/product-list.controller.js"></script>
+		<script src="/app/modules/header/header.js"></script>
+		<script src="/app/modules/header/header.controller.js"></script>
+		<script src="/app/modules/app.js"></script>
+		<script src="/app/modules/factories/ApiFactory.js"></script>
 		<!-- endinject -->
 	</body>
 </html>

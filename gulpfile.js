@@ -1,13 +1,14 @@
-var gulp   = require('gulp');
-var inject = require('gulp-inject');
-var bower  = require('main-bower-files');
-var sass   = require('gulp-ruby-sass');
-var jshint = require('gulp-jshint');
+var gulp            = require('gulp');
+var inject          = require('gulp-inject');
+var bower           = require('main-bower-files');
+var sass            = require('gulp-ruby-sass');
+var jshint          = require('gulp-jshint');
+var angularFilesort = require('gulp-angular-filesort');
 
 gulp.task('inject', function () {
     return gulp.src('app/index.html')
         .pipe(inject(gulp.src(bower(), {read: false}), {starttag: '<!-- inject:bower:{{ext}} -->'}))
-        .pipe(inject(gulp.src('app/modules/**/*.js'), {read: false}))
+        .pipe(inject(gulp.src('app/modules/**/*.js').pipe(angularFilesort()), {read: false}))
         .pipe(inject(gulp.src('app/styles/**/*.css'), {read: false}))
         .pipe(gulp.dest('app'));
 });
