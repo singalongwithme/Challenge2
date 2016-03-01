@@ -2,8 +2,9 @@
     'use strict';
 
     angular
-        .module('SupplyHub', [
+        .module('supplyhub', [
             'ui.router',
-            'ngTable'
+            'ngTable',
+            'supplyhub.header'
         ]);
 })();

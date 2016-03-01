@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="SupplyHub">
+<html ng-app="supplyhub">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -13,6 +13,7 @@
 		<!-- endinject -->
 	</head>
 	<body>
+		<div ui-view><div>
 		<!-- inject:bower:js-->
 		<script src="/bower_components/angular/angular.js"></script>
 		<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
@@ -23,6 +24,7 @@
 
 		<!-- inject:js -->
 		<script src="/app/modules/app.js"></script>
+		<script src="/app/modules/header/header.js"></script>
 		<!-- endinject -->
 	</body>
 </html>
