@@ -28,8 +28,9 @@
                             return item.product.photo;
                         });
 
+                        params.total(vm.productsList.length);
                         $defer.resolve(vm.productsList.slice((params.page() - 1) * params.count(), params.page() * params.count()));
-                        $state.go('.', {page: params.page()}, {notify: false});
+                        $state.go('main.products', {page: params.page()}, {notify: false});
                     }
                 },
                 dataset: vm.productsList,

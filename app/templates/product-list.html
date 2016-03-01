@@ -1,8 +1,15 @@
 <div class="container products-container">
 	<table ng-table="vm.tableParams" show-filter="false" class="table row">
-		<tr ng-repeat="item in vm.productsList">
-			<td title="'Product'">
-				{{ item }}
+		<tr ng-repeat="item in $data">
+			<td class="center-block">
+				<md-card class="product-item-container">
+					<div class="md-card-image" style="background-image: url({{ item.product.photo }}">
+					</div>
+					<p class="item-description">
+						{{ item.product.invoiceDescription }}
+					</p>
+					</div>
+				</md-card>
 			</td>
 		</tr>
 	</table>

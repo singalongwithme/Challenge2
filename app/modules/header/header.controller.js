@@ -15,10 +15,10 @@
         function getProductsList (query) {
             ApiFactory
                 .getProductsList(query)
-                .success(function (products) {
+                .then(function (products) {
                     ApiFactory.productsList = products;
 
-                    $state.go('main.products', {search: query});
+                    $state.go('main.products', {search: query, page: 1});
                 })
         }
     }
