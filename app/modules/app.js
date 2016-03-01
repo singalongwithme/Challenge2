@@ -5,6 +5,7 @@
         .module('supplyhub', [
             'ui.router',
             'ngTable',
-            'supplyhub.header'
+            'supplyhub.header',
+            'supplyhub.products'
         ]);
 })();

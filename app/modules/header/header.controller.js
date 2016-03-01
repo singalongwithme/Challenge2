@@ -2,10 +2,18 @@
     'use strict';
 
     angular
-        .module('suppyhub.header')
-        .controller('HeaderController');
+        .module('supplyhub.header')
+        .controller('HeaderController', HeaderController);
 
-    HeaderController.$inject = [];
+    HeaderController.$inject = ['ApiFactory'];
 
-    function HeaderController () {}
+    function HeaderController (ApiFactory) {
+        var vm = this;
+
+        vm.getProductList = getProductList;
+
+        function getProductList (query) {
+            $state.go('main.products', {search: query});
+        }
+    }
 })();
