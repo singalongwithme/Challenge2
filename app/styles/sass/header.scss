@@ -1,0 +1,30 @@
+.header {
+	padding: 10px 0;
+
+	text-align: center;
+
+	background-color: $header-color;
+
+	.logo {
+			display: inline-block;
+			margin: 10px;
+			vertical-align: middle;
+		}
+
+	.form {
+		display: inline-block;
+		vertical-align: middle;
+
+		.input-group {
+			width: 300px;
+
+			.btn {
+				background-color: $orange;
+
+				& > span {
+					color: #fff;
+				}
+			}
+		}
+	}
+}

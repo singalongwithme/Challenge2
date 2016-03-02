@@ -1,8 +1,8 @@
 <div class="container products-container">
-	<table ng-table="vm.tableParams" show-filter="false" class="table row">
-		<tr ng-repeat="item in $data">
+	<table class="table row" ng-table="vm.tableParams" show-filter="false">
+		<tr class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="item in $data">
 			<td class="center-block">
-				<md-card class="product-item-container">
+				<md-card class="product-item-container center-block">
 					<div class="md-card-image" style="background-image: url({{ item.product.photo }}">
 					</div>
 					<p class="item-description">

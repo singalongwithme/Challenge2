@@ -1,0 +1,61 @@
+body {
+  background-color: #e6e6e6; }
+
+.header {
+  padding: 10px 0;
+  text-align: center;
+  background-color: #666699; }
+  .header .logo {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle; }
+  .header .form {
+    display: inline-block;
+    vertical-align: middle; }
+    .header .form .input-group {
+      width: 300px; }
+      .header .form .input-group .btn {
+        background-color: #f1a948; }
+        .header .form .input-group .btn > span {
+          color: #fff; }
+
+.products-container {
+  padding-top: 10px;
+  background-color: #e6e6e6; }
+  .products-container .table {
+    position: relative;
+    margin: 0 auto; }
+    .products-container .table th {
+      background-color: #e6e6e6;
+      pointer-events: none; }
+    .products-container .table .product-item-container {
+      position: relative;
+      height: 150px;
+      width: 150px; }
+      .products-container .table .product-item-container .md-card-image {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        padding: 5px;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat; }
+      .products-container .table .product-item-container .item-description {
+        width: auto;
+        margin: 5px;
+        text-align: center; }
+
+.ng-table-pager {
+  position: relative;
+  text-align: center; }
+  .ng-table-pager .pagination {
+    vertical-align: middle; }
+    .ng-table-pager .pagination li > a {
+      border: none;
+      color: #f1a948;
+      background-color: white; }
+    .ng-table-pager .pagination .active a {
+      color: black; }
+      .ng-table-pager .pagination .active a:hover {
+        color: black;
+        background-color: white; }
