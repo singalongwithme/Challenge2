@@ -1,4 +1,6 @@
 <div class="container products-container">
+	<h4 class="banner" ng-hide="vm.loaded">{{ vm.loadText }}</h4>
+	<h4 class="banner" ng-show="vm.found">{{ vm.productsList.length }} found for "<em>{{ vm.query }}</em>"</h4>
 	<table class="table row" ng-table="vm.tableParams" show-filter="false">
 		<tr class="col-lg-2 col-md-3 col-sm-4 col-xs-6" ng-repeat="item in $data">
 			<td class="center-block">

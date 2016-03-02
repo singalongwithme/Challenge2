@@ -23,9 +23,15 @@ body {
         .header .form .input-group .btn > span {
           color: #fff; }
 
+.splash {
+  padding-top: 15px;
+  text-align: center; }
+
 .products-container {
   padding-top: 10px;
   background-color: #e6e6e6; }
+  .products-container .banner {
+    text-align: center; }
   .products-container .table {
     position: relative;
     margin: 0 auto; }

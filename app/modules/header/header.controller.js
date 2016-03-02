@@ -10,9 +10,13 @@
     function HeaderController ($state, ApiFactory) {
         var vm = this;
 
+        vm.hasSearched = $state.params.search;
+
         vm.getProductsList = getProductsList;
 
         function getProductsList (query) {
+            vm.hasSearched = true;
+
             ApiFactory
                 .getProductsList(query)
                 .then(function (products) {
