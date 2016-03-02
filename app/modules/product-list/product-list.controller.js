@@ -42,7 +42,8 @@
                 },
                 dataset: vm.productsList,
                 counts: []
-            }
+            };
+
             return new NgTableParams(initialParams, initialSettings);
         }
     }

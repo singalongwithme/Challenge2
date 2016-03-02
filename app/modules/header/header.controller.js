@@ -23,7 +23,7 @@
                     ApiFactory.productsList = products;
 
                     $state.go('main.products', {search: query, page: 1});
-                })
+                });
         }
     }
 })();

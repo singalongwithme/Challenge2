@@ -32,7 +32,7 @@
                                 .getProductsList($stateParams.search)
                                 .success(function (products) {
                                     ApiFactory.productsList = products;
-                                })
+                                });
                         }
                     }
                 }

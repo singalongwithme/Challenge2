@@ -20,4 +20,5 @@
     function init (cfpLoadingBarProvider) {
         cfpLoadingBarProvider.includeSpinner = false;
     }
+
 })();
