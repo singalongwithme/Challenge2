@@ -1,6 +1,10 @@
 body {
   background-color: #e6e6e6; }
 
+#loading-bar .bar {
+  height: 3px;
+  background: #f1a948; }
+
 .header {
   padding: 10px 0;
   text-align: center;
