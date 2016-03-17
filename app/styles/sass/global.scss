@@ -4,6 +4,10 @@ $header-color: #666699;
 
 body { background-color: $body-color; }
 
+div[ui-view] {
+	background-color: $body-color;
+}
+
 #loading-bar .bar {
 		height: 3px;
 
